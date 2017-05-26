@@ -1,0 +1,135 @@
+<head>
+<title>24点游戏</title>
+<meta http-equiv="content-type"  content="text/html";charset=utf-8>
+<style>
+body {background-color:buttonface;}
+#text_result {
+        background-color:#6090da;
+        border:black solid 1px;
+        color:white;
+        font-weight:bold;
+        height:20px;        
+}
+</style>
+
+<script type="text/javascript">
+<!--
+var v1,v2,v3,v4,v5,text_result;
+function $(str){return(document.getElementById(str));}
+function call(val1,val2,val3,val4)
+{
+
+        thearray0=new Array(val1,val2,val3,val4);
+        thearray1=new Array('1234','1243','1324','1342','1423','1432',
+        '2134','2143','2341','2314','2413','2431','3124','3142','3241','3214','3412','3421','4123','4132','4213','4231','4312','4321');
+        thearray2=new Array('+' ,'-','*', '/');
+
+        a1=parseInt(v5.value);
+
+        for(var ii=0;ii<24;ii++)
+        {
+                thearray3=thearray1[ii].split('');
+                for(var mm=0;mm<4;mm++)
+                {
+                        thearray3[mm]=parseInt(thearray3[mm]);
+                }
+
+                for(var jj=0;jj<4;jj++){
+                        for(var kk=0;kk<4;kk++){
+                                for(var ll=0;ll<4;ll++)
+                                {
+                                        ss1=thearray0[therray3[0]-1]+thearray2[jj]+therray0[thearray3[1]-1]+thearray2[kk]+thearray0[thearray[2]-1]+thearray2[ll]+thearray0[thearray3[3]-1];
+                                        if(eval(ss1)==a1)
+                                        {return(ss1);}
+
+                                        ss1='('+thearray0[thearray3[0]-1]+thearray2[jj]+thearray0[thearray3[1]-1]+')'+thearray2[kk]+thearray0[thearray[2]-1]+thearray2[ll]+thearray0[thearray3[3]-1];
+                                        if(eval(ss1)==a1)
+                                        {return(ss1);}
+                                        ss1=thearray0[thearray3[0]-1]+thearray2[jj]+'('+thearray0[thearray3[1]-1]+thearray2[kk]+thearray0[thearray[2]-1]+')'+thearray2[ll]+thearray0[thearray3[3]-1];
+                                        if(eval(ss1)==a1)
+                                        {return(ss1);}
+                                        ss1=thearray0[thearray3[0]-1]+thearray2[jj]+thearray0[thearray3[1]-1]+thearray2[kk]+'('+thearray0[thearray[2]-1]+thearray2[ll]+thearray0[thearray3[3]-1]+')';
+                                        if(eval(ss1)==a1)
+                                        {return(ss1);}
+                                        
+                                        ss1='('+thearray0[thearray3[0]-1]+thearray2[jj]+thearray0[thearry3[1]-1]+thearray2[kk]+thearray0[thearray[2]-1]+')'+thearray2[ll]+thearray0[thearray3[3]-1];
+                                        if(eval(ss1)==a1)
+                                        {return(ss1);}
+                                        ss1=thearray0[thearray3[0]-1]+thearray2[jj]+'('+thearray0[thearray3[1]-1]+thearray2[kk]+thearray0[thearray[2]-1]+thearray2[ll]+thearray0[thearray3[3]-1]+')';
+                                        if(eval(ss1)==a1)
+                                        {return(ss1);}
+                                }
+
+        }}}
+        return(false);
+}
+
+
+function check1(boj1)
+{
+        if(isNaN(boj1.value))
+                {
+
+                        alert("请输入数值");
+                        boj1.focus();                        
+                        boj1.select();
+                        event.returnValue=false;
+                        event.cancelBubble=true;
+                        return(false);
+                }
+}
+
+function init()
+{
+        v1=$("v1");
+    
+        v2=$("v2");
+        v3=$("v3");
+        v4=$("v4");
+        v5=$("v5");
+        text_result=$("text_result");
+        v1.select();
+}
+
+function main()
+{
+        var s1=call(v1.value,v2.value,v3.value,v4.value);
+
+        if(s1)
+        {      
+                text_result.innerText+='\n'+s1+'=='+v5.value;
+        }
+        else
+        {
+                text_result.innerText+='\n'+v1.value+','+v2.value+','+v3.value+','+v4.value+','+v5.value+'        无效果!';
+        }
+        init();
+        return(false);
+}
+
+
+
+
+
+-->
+</script>
+
+
+</head>
+<body  style="overflow:auto;"   onload="init();">
+<form  onsubmit="return(main());">
+<b>请输入要计算的四个数:</b><br>
+<input id="v1" onchange="check1(this);">
+<input id="v2" onchange="check1(this);"><br>
+<input id="v3" onchange="check1(this);">
+<input id="v4" onchange="check1(this);"><br>
+<b>请输入要计算的目标结果:</b>
+<input id="v5" onchange="check1(this);"  value="24"><br>
+<input type="submit" value="计算">
+<input type="reset" onclick="clear_input();" value="清除结果">
+</form>
+<b>结果:</b><br>
+<div id="text_result" ><div>
+
+</body>
+</html>
