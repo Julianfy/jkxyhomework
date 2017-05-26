@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>百度一下，你就知道</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="searchTop">
+    </div>
+    <div class="tabTop">
+    </div>
+    <div class="change-skin-container">
+        <div class="skin-header">
+            <div class="set-skin">
+                <span class="no-skin">不使用皮肤</span>
+                <span class="up-skin">收起</span>
+            </div>
+        </div>
+        <div class="skin-box">
+            <img src="img/skin1.jpg" alt="皮肤1">
+            <img src="img/skin2.jpg" alt="皮肤2">
+            <img src="img/skin3.jpg" alt="皮肤3">
+        </div>
+    </div>
+    <!--头部导航栏-->
+    <header>
+        <a href="#" class="change-skin" title="换肤">换肤</a>
+        <div class="outer">
+            <a class="more" href="#">更多产品
+            </a>
+            <div class="right">
+                <a href="#">更多产品
+                </a>
+                <div class="rightInner">
+                    <a href="">
+                        <img src="img/nuomi.png">糯米
+                    </a>
+                    <a href="">
+                        <img src="img/zhidao.png">知道
+                    </a>
+                    <a href="">
+                        <img src="img/music.png">音乐
+                    </a>
+                    <a href="">
+                        <img src="img/image.png">图片
+                    </a>
+                    <a href="">
+                        <img src="img/wenku.png">文库
+                    </a>
+                    <a href="">
+                        <img src="img/bang.png">风云榜
+                    </a>
+                    <a href="">
+                        <img src="img/tuiguang.png">百度推广
+                    </a>
+                    <a href="">全部产品>></a>
+                </div>
+            </div>
+        </div>
+        <div class="set">
+            <a href="#" class="setText">设置</a>
+            <div class="set-inner">
+                <em></em>
+                <i></i>
+                <a href="#">搜索设置</a>
+                <a href="#">高级搜索</a>
+                <a href="#">关闭测试</a>
+                <a href="#">搜索历史</a>
+            </div>
+        </div>
+        <a href="#">贴吧</a>
+        <a href="#">视频</a>
+        <a href="#">地图</a>
+        <a href="#">hao123</a>
+        <a href="#">新闻</a>
+    </header>
+    <!--主要内容-->
+    <div class="skin"></div>
+    <div class="main">
+        <img src="img/bdlogo.png" class="logo">
+        <div class="search">
+            <img src="img/bdlogo-top.png" class="logo-top">
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" class="searchInput" name="word" autofocus>
+                <input type="submit" id="submit" value="百度一下">
+            </form>
+        </div>
+        <!--搜索框下面的内容-->
+        <div id="middle">
+            <!--导航-->
+            <div class="tab">
+                <div class="tabInner">
+                    <div class="focus tabClick ">
+                        <span class="focusIconClick"> </span> 我的关注
+                    </div>
+                    <ul>
+                        <li class="navigation">
+                            导航
+                        </li>
+                        <li class="video">
+                            视频
+                        </li>
+                        <!-- <li class="shop">
+                            购物
+                        </li>
+                        <li class="recommend">
+                            推荐
+                        </li>-->
+                    </ul>
+                    <div class="middleSet"></div>
+                </div>
+            </div>
+            <div class="setPage">
+            </div>
+            <!--我的关注-->
+            <div class="middleInner middleInnerShow">
+                <span class="myFocus">
+                我的导航
+                </span>
+                <div class="myFocusInner">
+                    <a href="">
+                        <img src="img/myFocusicon1.png">
+                        <span>百度消息</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon2.png">
+                        <span>hao123</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon3.png">
+                        <span>虎扑</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon1.png">
+                        <span>非诚勿扰</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon5.png">
+                        <span>好乐买品牌鞋城</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon6.png">
+                        <span>网易德甲</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon7.png">
+                        <span>广东体育在线</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon1.png">
+                        <span>百度团购</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon9.png">
+                        <span>360网址导航</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon10.png">
+                        <span>新浪NBA</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon11.png">
+                        <span>优酷网</span>
+                    </a>
+                    <a href="">
+                        <img src="img/myFocusicon12.png">
+                        <span>nba</span>
+                    </a>
+                </div>
+            </div>
+            <!--导航-->
+            <div class="middleInner navInner ">
+                <div class="guessLike">
+                    <span>猜你喜欢</span>
+                    <div class="guessLikeInner">
+                        <img src="img/nav/back.png" class="back">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like1.png"> 百度糯米
+                        </a>
+                        <div class="navBottomBar">
+                            <a href="" class="navBottomText">
+                                最高返利80.00%
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guessLikeInner">
+                        <img src="img/nav/back.png" class="back">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like2.png"> 京东商城
+                        </a>
+                        <div class="navBottomBar">
+                            <a href="" class="navBottomText">
+                                最高返利80.00%
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guessLikeInner">
+                        <img src="img/nav/back.png" class="back">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like3.png"> 1号店
+                        </a>
+                        <div class="navBottomBar">
+                            <a href="" class="navBottomText">
+                                最高返利80.00%
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guessLikeInner">
+                        <img src="img/nav/back.png" class="back">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like4.png"> 苏宁易购
+                        </a>
+                        <div class="navBottomBar">
+                            <a href="" class="navBottomText">
+                                最高返利80.00%
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guessLikeInner">
+                        <img src="img/nav/back.png" class="back">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like5.png"> 唯品会
+                        </a>
+                        <div class="navBottomBar">
+                            <a href="" class="navBottomText">
+                                最高返利80.00%
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guessLikeInner">
+                        <img src="img/nav/back.png" class="back">
+                        <a href="" class="guessLikeA navInnerR">
+                            <img src="img/nav/like6.png"> 当当网
+                        </a>
+                        <div class="navBottomBar">
+                            <a href="" class="navBottomText">
+                                最高返利80.00%
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like7.png"> 百度翻译
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like8.png"> 支付宝
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like9.png"> jquery
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like10.png"> 新浪云
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like11.png"> 传智播客
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA navInnerR">
+                            <img src="img/nav/like12.png"> eval
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like13.png"> 中国站长站
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like14.png"> 百度地图
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like12.png"> jquery api
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like16.png"> 高等教育
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like12.png"> javascript
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA navInnerR">
+                            <img src="img/nav/like18.png"> 齐鲁人才网
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like12.png"> css教程
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like20.png"> 有道翻译
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like12.png"> 山东高校
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like12.png"> jquery教程
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA">
+                            <img src="img/nav/like14.png"> 百度VIP
+                        </a>
+                    </div>
+                    <div class="guessLikeInner">
+                        <a href="" class="guessLikeA navInnerR">
+                            <img src="img/nav/like24.png"> 微软商店
+                        </a>
+                    </div>
+                </div>
+                <div class="information">
+                    <span>资讯信息</span>
+                    <a href="">
+                        <img src="img/nav/information1.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information2.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information3.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information4.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information5.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/information6.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information7.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information8.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information9.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information10.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information11.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/information12.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information13.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information14.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information15.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/information16.jpg">
+                    </a>
+                </div>
+                <div class="recreation">
+                    <span>休闲娱乐</span>
+                    <a href="">
+                        <img src="img/nav/recreation1.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation2.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation3.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation4.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation5.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/recreation6.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation7.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation8.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation9.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation10.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/recreation11.jpg">
+                    </a>
+                </div>
+                <div class="shopSea">
+                    <span>购物海淘</span>
+                    <a href="">
+                        <img src="img/nav/shop1.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop2.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop3.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop4.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop5.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/shop6.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop7.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop8.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop9.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop10.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop11.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/shop12.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop13.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop14.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop15.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop16.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/shop17.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/shop18.jpg">
+                    </a>
+                </div>
+                <div class="life">
+                    <span>生活周边</span>
+                    <a href="">
+                        <img src="img/nav/life1.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/life2.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/life3.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/life4.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/life5.jpg">
+                    </a>
+                    <a href="" class="navInnerR">
+                        <img src="img/nav/life6.jpg">
+                    </a>
+                    <a href="">
+                        <img src="img/nav/life7.jpg">
+                    </a>
+                </div>
+            </div>
+            <!--视频-->
+            <div class="middleInner videoInner">
+                <div class="videoOuter">
+                    <div class="videoBox">
+                        <a href="" title="十月围城">
+                            <img src="img/video/1.jpg">
+                        </a>
+                        <a href="" class="videoBar film">
+                        </a>
+                        <div class="videoText">
+                            <a href="">十月围城</a>
+                        </div>
+                    </div>
+                    <div class="videoBox">
+                        <a href="" title="芈月传">
+                            <img src="img/video/2.jpg">
+                        </a>
+                        <a href="" class="videoBar teleplay">
+                        </a>
+                        <div class="videoText">
+                            <a href="">芈月传</a>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="奇葩！总统嫌比赛太无聊叫停 改踢点球大战">
+                                <img src="img/video/3.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                奇葩！总统嫌比赛太无聊叫停 改踢点球大战
+                            </a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="辱骂的哥下等人事件后续 人肉搜索车主闹乌龙">
+                                <img src="img/video/4.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                辱骂的哥下等人事件后续 人肉搜索车主闹乌龙
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="俄罗斯增兵叙利亚确保制空权 被指装备老旧">
+                                <img src="img/video/5.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                俄罗斯增兵叙利亚确保制空权 被指装备老旧
+                            </a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="孩子刮别人车妈妈留纸条道歉 车主感动不要赔偿">
+                                <img src="img/video/6.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                孩子刮别人车妈妈留纸条道歉 车主感动不要赔偿
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoOuter">
+                    <div class="videoBox">
+                        <a href="" title="越狱第一季">
+                            <img src="img/video/8.jpg">
+                        </a>
+                        <a href="" class="videoBar teleplay">
+                        </a>
+                        <div class="videoText">
+                            <a href="">越狱第一季</a>
+                        </div>
+                    </div>
+                    <div class="videoBox">
+                        <a href="" title="大力神">
+                            <img src="img/video/7.jpg">
+                        </a>
+                        <a href="" class="videoBar film">
+                        </a>
+                        <div class="videoText">
+                            <a href="">大力神</a>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="奥登20+13江苏客场胜天津 克劳福德42分难救主">
+                                <img src="img/video/9.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                奥登20+13江苏客场胜天津 克劳福德42分难救主
+                            </a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="《蜀山战纪》第三季上线7天播放量沸腾破亿">
+                                <img src="img/video/10.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                《蜀山战纪》第三季上线7天播放量沸腾破亿
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="保罗·麦卡特尼、约翰尼·德普、娜塔莉·波特曼《My Valentine》">
+                                <img src="img/video/11.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                               保罗·麦卡特尼、约翰尼·德普、娜塔莉·波特曼《My Valentine》
+                            </a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="熊黛林晒照疑公开恋情：幸福就在身边">
+                                <img src="img/video/12.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                               熊黛林晒照疑公开恋情：幸福就在身边
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoOuter">
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="音乐短片 - 保罗·沃克 致敬短片">
+                                <img src="img/video/13.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                            音乐短片 - 保罗·沃克 致敬短片</a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="保罗沃克搞笑短剧 “妻子”怀孕惊喜就这一刻">
+                                <img src="img/video/14.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">保罗沃克搞笑短剧 “妻子”怀孕惊喜就这一刻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="排骨精郑爽PK虚胖范冰冰 女星胖瘦穿搭大不同">
+                                <img src="img/video/15.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                            排骨精郑爽PK虚胖范冰冰 女星胖瘦穿搭大不同</a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="家和万事兴 第38集预告">
+                                <img src="img/video/16.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">家和万事兴 第38集预告</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="弹力带 核心力量训练">
+                                <img src="img/video/17.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                            弹力带 核心力量训练</a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="法国禽流感致封关 利好国内白鸡行情">
+                                <img src="img/video/18.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">法国禽流感致封关 利好国内白鸡行情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBox">
+                        <a href="" title="奔跑吧兄弟 第三季">
+                            <img src="img/video/19.jpg">
+                        </a>
+                        <a href="" class="videoBar variety">
+                        </a>
+                        <div class="videoText">
+                            <a href="">奔跑吧兄弟 第三季</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoOuter">
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="《大秧歌》槐花当着丈夫的面偷汉子">
+                                <img src="img/video/21.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                            《大秧歌》槐花当着丈夫的面偷汉子</a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="尖叫2016爱奇艺之夜曝中韩双会场 给你双倍尖叫">
+                                <img src="img/video/22.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">尖叫2016爱奇艺之夜曝中韩双会场 给你双倍尖叫</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="《面包树》开播 唐嫣三年前剧集上映—早班机">
+                                <img src="img/video/23.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">
+                                《面包树》开播 唐嫣三年前剧集上映—早班机</a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="惊险！实拍狮子游泳过河险被鳄鱼捕食">
+                                <img src="img/video/24.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">惊险！实拍狮子游泳过河险被鳄鱼捕食</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBoxOuter">
+                        <div class="videoBox">
+                            <a href="" title="国际地位窜升 人民币成第四大支付货币">
+                                <img src="img/video/25.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">国际地位窜升 人民币成第四大支付货币
+                            </a>
+                            </div>
+                        </div>
+                        <div class="videoBox">
+                            <a href="" title="《大牌对王牌》孙艺洲传授吻技秘诀 窦骁等中招">
+                                <img src="img/video/26.jpg">
+                            </a>
+                            <a href="" class="videoBar">
+                            </a>
+                            <div class="videoText">
+                                <a href="">《大牌对王牌》孙艺洲传授吻技秘诀 窦骁等中招</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoBox">
+                        <a href="" title="琅琊榜">
+                            <img src="img/video/27.jpg">
+                        </a>
+                        <a href="" class="videoBar teleplay">
+                        </a>
+                        <div class="videoText">
+                            <a href="">琅琊榜</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--购物
+            <div class="middleInner">
+                购物
+            </div>-->
+            <!--推荐
+            <div class="middleInner">
+                推荐
+            </div>-->
+        </div>
+        <!--返回顶部-->
+        <div id="goTop">
+            <div id="goTopText">
+                返回顶部
+            </div>
+            <span id="goTopicon"></span>
+        </div>
+    </div>
+    <!--尾部-->
+    <footer>
+        <div class="top">
+            <a href="">把百度设为首页</a>
+            <a href="">关于百度</a>
+            <a href="">About Baidu</a>
+        </div>
+        <div class="bottom">
+            <span>&copy;</span>
+            <span>2015 Baidu </span>
+            <a href="/duty/" target="_blank">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>
+            <span>京ICP证030173号</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/*消除空白边距*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*设置main样式*/
+#main{
+    position: relative;/*将父级设置相对布局*/
+}
+/*设置box的样式*/
+.box{
+    padding: 15px 0 0 15px;/*将图片与上和左都有一个15px的距离*/
+    float: left;/*设置向左浮动效果*/
+}
+/*设置pic的样式*/
+.pic{
+    padding: 10px;/*与box盒子距离10px*/
+    border: 1px solid #ccc;/*设置边框*/
+    border-radius: 5px;/*设置边框圆角效果*/
+    box-shadow: 0 0 5px #ccc;/*设置边框阴影效果*/
+}
+/*设置img样式*/
+/*瀑布流布局都是等宽不等高*/
+.pic img{
+    width: 160px;
+    height: auto;
+}
