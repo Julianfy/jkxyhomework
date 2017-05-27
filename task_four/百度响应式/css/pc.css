@@ -1,0 +1,197 @@
+.mobile-wrapper {
+    display: none;
+}
+
+.pc-wrapper {
+    display: block;
+}
+
+.container {
+    width: 100%;
+}
+
+
+/*导航begin*/
+
+#list {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 100px auto;
+}
+
+.list-black {
+    display: none
+}
+
+.list_p {
+    width: 440px;
+    height: 24px;
+    float: right;
+}
+
+.list_p a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.nav {
+    font-weight: 800;
+    color: #333;
+}
+
+.nav_lb,
+.nav_pf {
+    color: #333;
+}
+
+.nav_bri {
+    display: inline-block;
+    text-decoration: none;
+    width: 58px;
+    height: 24px;
+    background-color: #38f;
+    text-align: center;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*导航end*/
+
+
+/*logo begin*/
+
+.middle_img {
+    width: 100%;
+    height: 130px;
+}
+
+.middle img {
+    width: 270px;
+    height: 129px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.gap {
+    width: 640px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+.entry {
+    float: left;
+    width: 83%;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.into {
+    float: left;
+    background-color: #3385ff;
+    font: 14px arial;
+    color: #fff;
+    height: 40px;
+    width: 16%;
+    border: 1px solid #2d78f4;
+}
+
+
+/*logo end*/
+
+
+/*footer begin*/
+
+#footer {
+    margin: 220px auto 0 auto;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    *text-align: center;
+}
+
+.footer {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.code {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 300px;
+    height: 70px;
+}
+
+.code_one,
+.code_two {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 124px;
+    height: 60px;
+    line-height: 70px \9;
+    margin-top: 8px \9;
+}
+
+.code_img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    line-height: 70px \9;
+}
+
+.code_text {
+    font: 12px arial;
+    padding-top: 7px;
+    line-height: 25px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.span_text {
+    color: #ccc;
+}
+
+.ul {
+    line-height: 22px;
+}
+
+.conw {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 335px;
+    height: 70px;
+    font: 12px arial;
+    line-height: 23px;
+    color: #999;
+    text-align: left;
+    line-height: 23px \9;
+}
+
+.conw .ul a {
+    margin-right: 40px;
+}
+
+.cf {
+    color: #999;
+}
+
+
+/*footer*/

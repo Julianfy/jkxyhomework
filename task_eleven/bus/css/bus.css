@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.cf:after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+
+.wrap {
+  margin: 300px;
+  width: 800px;
+  height: 300px;
+  border: 3px solid #0000ff;
+  border-radius: 10px; }
+  .wrap .bus_top span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 80px;
+    margin: 10px 0 5px 0;
+    background: #ffff00;
+    color: #ff0000;
+    float: left;
+    font-size: 46px; }
+  .wrap .bus_top .bus_top_div {
+    float: right;
+    width: 600px;
+    height: 60px;
+    margin-top: 20px; }
+    .wrap .bus_top .bus_top_div span {
+      margin: 0 0 5px 0;
+      width: 600px;
+      height: 40px;
+      font-size: 30px;
+      background: #fff; }
+    .wrap .bus_top .bus_top_div .span_first {
+      color: #6aa84f; }
+    .wrap .bus_top .bus_top_div .span_last {
+      color: #0000ff; }
+  .wrap p {
+    margin: 0 20px;
+    color: #434343; }
+  .wrap .bus_cont {
+    width: 100%;
+    height: 140px;
+    background: #6aa84f; }
+    .wrap .bus_cont span {
+      display: inline-block;
+      width: 20px;
+      height: 100%;
+      font-size: 16px;
+      margin-left: 21px;
+      color: #fff;
+      text-align: word-spacing; }
+    .wrap .bus_cont .list {
+      color: #ff0000; }
+  .wrap .bus_p {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    margin: 0;
+    color: #0000ff;
+    text-align: center; }
+  .wrap .bus_span {
+    display: inline-block;
+    width: 60%;
+    height: 10px;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 5px;
+    border-top: 5px solid #ff0000; }
+  .wrap i {
+    position: absolute;
+    content: "";
+    border-width: 8px 30px;
+    border-style: solid;
+    border-left-color: #ff0000;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    background: #333; }
+
+/*# sourceMappingURL=bus.css.map */

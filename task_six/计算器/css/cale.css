@@ -1,0 +1,127 @@
+/*设置统一字体、大小、居中、背景色*/
+
+body {
+    font-family: Arial, Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    text-align: center;
+    background-color: #e2e2e2;
+}
+
+h6 {
+    margin: 10px;
+    font-size: 12px;
+}
+
+
+/*设定整个计算机的大小、边框、背景色*/
+
+#calculator {
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px auto;
+    border: #fff 1px solid;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+}
+
+
+/*显示器的设置*/
+
+.screen {
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    line-height: 24px;
+    padding: 4px;
+    border: #e6e6e6 1px solid;
+    margin: 10px auto;
+    direction: ltr;
+    text-align: right;
+    font-size: 16px;
+    color: #999;
+}
+
+
+/*按键屏幕大小*/
+
+#calcu-btn {
+    width: 240px;
+    /*宽度设置*/
+    margin: 0 auto;
+    /*居中设置*/
+}
+
+
+/*对ul的内外边距设置*/
+
+#calcu-btn ul {
+    padding: 0;
+    margin: 5px 14px;
+    border: #fff 1px solid;
+    border-radius: 5%;
+    height: auto;
+    overflow: hidden
+}
+
+
+/*设置li标签的float属性、大小、字体居中、背景色*/
+
+#calcu-btn li {
+    list-style-type: none;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 32px;
+    font-size: 14px;
+    background-color: #cca1a1;
+}
+
+
+/*设置非数字的按键颜色*/
+
+#calcu-btn li.tool {
+    background-color: #b4e8da;
+}
+
+
+/*划过li标签（数字按键）时候的背景色及鼠标形态*/
+
+#calcu-btn li:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+
+/*点击li标签（数字按键）时候的背景色及鼠标形态*/
+
+#calcu-btn li:active {
+    background-color: #fc0;
+    cursor: pointer;
+}
+
+
+/*点击li标签（数字按键）时候的背景色及鼠标形态*/
+
+#calcu-btn li.tool:active {
+    background-color: #d8e8ff;
+    cursor: pointer;
+}
+
+#calcu-foot {
+    text-align: left;
+    padding: 10px 15px 5px;
+    height: auto;
+    overflow: hidden;
+}
+
+span#note {
+    float: left;
+    width: 210px;
+    height: auto;
+    overflow: hidden;
+    color: red;
+}

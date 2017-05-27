@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>青岛家教网登人口</title>
+    <link rel="stylesheet" href="css/qdjj.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="logo"><img src="image/qdjjlogo.gif" alt="#"></div>
+        <div class="list">
+            <ul>
+                <li><a href="#"><p>注册</p></a></li>
+                <li><a href="#"><p>登入</p></a></li>
+                <li><a href="#"><p>收藏本站</p></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <P class="title_p">新教员注册第一步选择用户名、密码和身份</P><hr/>
+        <div class="message">
+            <div class="notice"><p>注意：带&nbsp;<span>*</span>&nbsp;为必填项</p></div>
+            <div class="title logon_password"><p>&nbsp;<b>登录名和密码</b></p></div>
+            <!--会员名开始-->
+            <div id="member">
+                <div class="member">&nbsp;&nbsp;&nbsp;<span >*</span>会员名：
+                    <input name="username" type="text" id="username" value="" maxlength="12" ></div>
+                <div class="member_p"><p><span>3-12个字符</span>，会员名须以字母开头，只能由英文字母、数字、下划线组成，中间不能有空格。</p>
+                </div>
+            </div>
+            <!--会员名end-->
+            <!--密码开始-->
+            <div id="password">
+                <div class="password">&nbsp;&nbsp;&nbsp;&nbsp;<span >*</span>密码：
+                <input name="password" type="text"  value="" maxlength="20" ></div>
+            <div class="password_a"> <p><span>6-20个字符</span>，区分英文字母大小写。</p></div></div>
+
+
+            <!--密码end-->
+            <!--再次确认密码开始-->
+            <div id="password_again"><div class="password">&nbsp;&nbsp;<span >*</span>确认密码：
+                <input name="password" type="text" value="" maxlength="20" ></div>
+                <div class="password_p"><p>确认密码要与密码完全一致，注意英文字母大小写。</p></div></div>
+
+            <!--确认密码end-->
+            <!--教员身份选择开始-->
+            <div class="title rank"><p>&nbsp;<b>选择教员身份</b></p></div>
+            <div class="rank_container">
+            <div class="jy_rank"><p><span >*</span>教员身份:</p></div>
+                <div class="select">
+                <label>
+                <input type="radio" name="Radio" value="radio" id="Radio_0">
+                在校大学生（研究生），不含留学生</label>
+                <br>
+                <label>
+                    <input type="radio" name="Radio" value="radio" id="Radio_1">
+                    专职教师（在职/进修/离职/退休）</label>
+                <br>
+                <label>
+                    <input type="radio" name="Radio" value="radio" id="Radio_2">
+                    外籍（含留学生、外教），海外归国人员</label>
+                <br>
+                <label>
+                    <input type="radio" name="Radio" value="radio" id="Radio_3">
+                    社会职业人士（已经毕业离校的非教师职业人员）</label>
+                <br>
+                 </div>
+
+            </div>
+                <div class="input">
+                    <div class="btn">
+                        <input type="submit" value="提交"/>
+                        <input type="reset" value="重置"/>
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
+    <!--教员身份选择end-->
+    <div class="footer">
+        <p><font color="#666666">Copyright © 2003～2008</font>版权所有 青岛家教网</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>

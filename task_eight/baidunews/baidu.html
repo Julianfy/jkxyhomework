@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" id="viewport" content="
+    width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>百度新闻的H5页面</title>
+    <link rel="stylesheet" href="./css/baidu.css" type="text/css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.css" />
+    <link rel="stylesheet" href="./css/font/iconfont.css" type="text/css" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部bg-->
+        <header class="cf">
+            <a href="#" class="logo"><span class="iconfont">&#x3487;</span></a>
+            <a href="#" class="user"><span class="iconfont" >&#xe60c;</span></a>
+            <a href="#" class="search"><span class="iconfont">&#xe505;</span></a>
+            <a href="#" class="more"><span class="iconfont">&#xe60a;</span></a>
+        </header>
+        <!-- 头部end-->
+        <!-- 导航bg-->
+        <nav class="cf">
+            <ul>
+                <li><a href="#">精选</a><i></i></li>
+                <li><a href="#">百家</a><i></i></li>
+                <li><a href="#">本地</a><i></i></li>
+                <li><a href="#">图片</a><i></i></li>
+                <li><a href="#">娱乐</a><i></i></li>
+                <li><a href="#">社会</a><i></i></li>
+                <li><a href="#">军事</a><i></i></li>
+                <li><a href="#">女人</a><i></i></li>
+                <li><a href="#">搞笑</a><i></i></li>
+                <li><a href="#">互联网</a><i></i></li>
+                <li><a href="#">更多</a><i></i></li>
+            </ul><i></i>
+        </nav>
+        <!-- 导航end-->
+        <!-- 主体部分bg-->
+        <article class="news-main">
+            <ul class="news-lists">
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="image/1.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>八成交易下滑 千家倒闭千家倒闭千家倒闭千家倒闭</h1>
+                        <p><span>2016年1月10日</span><span class="newssrc">极客财经</span></p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <!-- 主体部分end-->
+    </div>
+    <script type="text/javascript" charset="utf-8">
+    //设置三个字体的占据位置大小
+    $(document).ready(function() {
+        //获取整个body的宽度
+        var deviceWidth = $('body').width();
+        //获取到nav里面所有的li标签
+        $('nav li').each(function(item, index) {
+            //拆分li中的a标签的html并获取到拆分后的长度，判断长度大小
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6)
+            }
+        })
+    })
+    </script>
+    <script src="js/news.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

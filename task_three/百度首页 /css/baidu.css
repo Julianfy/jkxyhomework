@@ -1,0 +1,299 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 13px arial;
+    position: relative;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+}
+
+
+/*清除浮动*/
+
+
+/*导航蓝大小，向右浮动*/
+
+.nav-list {
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+}
+
+
+/*字体加粗*/
+
+.nav-list-a a {
+    /*font-size:16px;*/
+    font: 13px arial;
+    font-weight: 800;
+}
+
+.nav-list a {
+    color: #333;
+}
+
+li {
+    width: 60px;
+    height: 30px;
+    float: left;
+}
+
+.nav-list-a a:hover {
+    color: #3395ff;
+}
+
+
+/*设置下拉列表*/
+
+.dl {
+    position: relative;
+}
+
+.dl-list {
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    top: 30px;
+    border: 1px solid #999;
+    display: none;
+}
+
+.dl-list li {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.dl-list a {
+    width: 60px;
+    height: 20px;
+    text-decoration: none;
+}
+
+.dl:hover .dl-list {
+    display: block;
+}
+
+.dl-list a:hover {
+    background: #666;
+    color: #fff;
+}
+
+
+/*更多产品下拉列表*/
+
+.more {
+    background-color: #3385ff;
+    position: relative;
+    z-index: 100;
+}
+
+.more >a {
+    width: 60px;
+    height: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.more-list {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 400px;
+    display: none;
+}
+
+.more-list li {
+    width: 60px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.more a,
+.more-list a {
+    text-decoration: none;
+}
+
+.more:hover .more-list {
+    display: block;
+}
+
+
+/*主体部分*/
+
+.content {
+    text-align: center;
+    padding-top: 80px;
+}
+
+
+/*图片大小*/
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*input和button容器*/
+
+.content-inbu {
+    width: 550px;
+    height: 38px;
+    position: relative;
+    left: 50%;
+    margin-left: -275px;
+    margin-top: 20px;
+}
+
+
+/*搜索框大小*/
+
+.content input {
+    float: left;
+    width: 450px;
+    height: 34px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 10px;
+    /*ie 8*/
+     line-height: 34px\9;
+    outline: none;
+}
+
+
+/*搜索按钮大小*/
+
+.content button {
+    float: left;
+    width: 100px;
+    height: 34px;
+    background-color: #3385ff;
+    font: 12px arial;
+    color: #fff;
+    border: 1px solid #2d78f4;
+    outline:none;
+}
+
+.into:hover {
+    background-color: #3395ff;
+    cursor: pointer;
+}
+
+.entry:hover {
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+
+/*footer begin*/
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+#footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    *text-align: center;
+}
+
+.footer {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.code {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 300px;
+    height: 70px;
+}
+
+.code_one,
+.code_two {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 124px;
+    height: 60px;
+    line-height: 70px\9;
+    margin-top: 8px\9;
+}
+
+.code_img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    line-height: 70px\9;
+}
+
+.code_text {
+    font: 12px arial;
+    padding-top: 7px;
+    line-height: 25px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.span_text {
+    color: #ccc;
+}
+
+.ul {
+    line-height: 22px;
+}
+
+.conw {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 335px;
+    height: 70px;
+    font: 12px arial;
+    line-height: 23px;
+    color: #999;
+    text-align: left;
+    line-height: 23px\9;
+}
+
+.conw .ul a {
+    margin-right: 40px;
+}
+
+.cf {
+    color: #999;
+}
+
+
+/*footer end*/

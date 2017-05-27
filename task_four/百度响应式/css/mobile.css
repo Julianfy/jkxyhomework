@@ -1,0 +1,172 @@
+.mobile-wrapper {
+    display: block;
+}
+
+.pc-wrapper {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    min-width: 320px;
+}
+
+body {
+    min-width: 320px;
+    background-color: #ccc;
+}
+
+input button {
+    outline: none;
+}
+
+hr {
+    border-color: #ccc;
+}
+
+
+/*mobile width-size*/
+
+.mobile-wrapper {
+    width: 100%
+}
+
+
+/*header set*/
+
+.mobile-wrapper header {
+    width: 100%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.mobile-wrapper header span:first-child {
+    float: left;
+    line-height: 4rem;
+}
+
+.mobile-wrapper header span:last-child {
+    float: right;
+    line-height: 4rem;
+}
+
+.mobile-wrapper header p {
+    font-size: 2.0rem;
+    display: inline-block;
+    line-height: 50%;
+    margin-left: .5rem;
+    color: #999;
+}
+
+
+/*icon的大小 */
+
+.mobile-wrapper header .icon {
+    font-size: 2.5rem;
+    color: #999;
+}
+
+
+/*logo 搜索框设置*/
+
+.search-form {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+
+/*logo的设置*/
+
+.search-form .logo img {
+    width: 17.5rem;
+    height: 5.5rem;
+    margin-bottom: 5px;
+}
+
+.search-cont {
+    display: flex;
+}
+
+.search-form .search-input {
+    -webkit-flex-grow: 1;
+    height: 3rem;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border: 1px solid #999;
+    border-right: 1px solid #38f;
+}
+
+.search-form .search-btn {
+    -webkit-flex-grow: 0;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    background-color: #38f;
+    color: #fff;
+}
+
+
+/*content－nav的设置*/
+
+.content-nav {
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+
+.content-nav ul {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.content-nav li {
+    -webkit-flex-grow: 1;
+    list-style: none;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.content-nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1.4rem;
+}
+
+
+/*content-body */
+
+.content-body {
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content-body .content-body-div {
+    width: 100%;
+}
+
+.content-body-img {
+    box-sizing: border-box;
+    display: flex;
+}
+.content-body-img p{
+    -webkit-flex-grow: 1;
+}
+.content-body-img img {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.content-body-div p {
+    font-size: 1.4rem;
+}
+
+.content-body-div span {
+    display: inline-block;
+    font-size: .4rem;
+    color: #999;
+    margin-top: 5px;
+}

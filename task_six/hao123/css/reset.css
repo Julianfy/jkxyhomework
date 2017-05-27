@@ -1,0 +1,56 @@
+/*样式重置*/
+
+body,
+div,
+ul,
+li,
+ol,
+p,
+em,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*去除标签前面的默认的点*/
+
+ol,
+ul,
+li {
+    list-style-type: none;
+}
+
+
+/*去除下划线*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*去除img4px的hack*/
+
+img {
+    display: block;
+    border: none;
+}
+
+
+/*清除浮动*/
+
+.clearfloat {
+    zoom: 1;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}

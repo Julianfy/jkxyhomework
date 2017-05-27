@@ -1,0 +1,333 @@
+/*设置容器大小*/
+
+#container {
+    min-width: 1366px;
+    /*background-color: #f2f2f2;*/
+}
+
+
+/*头部上部分的布局*/
+
+.header {
+    width: 100%;
+    height: 60px;
+    /*border-bottom: 1px solid #ccc;*/
+    margin: 0 auto;
+}
+
+.header-first {
+    width: 80%;
+    height: 60px;
+    /*border-bottom: 1px solid #ccc;*/
+    margin: 0 auto;
+}
+
+.img-left {
+    float: left;
+}
+
+.header-top-title {
+    float: left;
+    width: 35px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #07AC72;
+}
+
+.tip1:before {
+    content: url("../image/a1.png");
+    position: absolute;
+    top: -7px;
+    left: -28px;
+}
+
+.tip2:after {
+    content: "33~27";
+    margin-left: 5px;
+}
+
+.header-top-right li a {
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+}
+
+.header-top-right a:hover {
+    background-color: #ccc;
+}
+
+.header-top-title p {
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+.header-top-left {
+    float: left;
+}
+
+.header-top-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.header-top-right-tip {
+    position: relative;
+}
+
+.header-top-right-tip1:before {
+    content: url("../image/dengru.png");
+    position: absolute;
+    right: 5px;
+    top: -2px;
+}
+
+.header-top-right-tip2:before {
+    content: url("../image/emil.png");
+    position: absolute;
+    right: 5px;
+    top: -2px;
+}
+
+.header-top-right-tip3:before {
+    content: url("../image/liylanqi.png");
+    position: absolute;
+    right: 5px;
+    top: -3px;
+}
+
+.header-top-right-tip4:before {
+    content: url("../image/huanfu.png");
+    position: absolute;
+    right: 5px;
+    top: -2px;
+}
+
+.img-right {
+    float: right;
+}
+
+.header-top-right a {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 38px;
+    display: inline-block;
+    color: #999999;
+    font-size: 12px;
+}
+
+.header-top-left a {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 5px;
+    display: inline-block;
+    color: #999999;
+    font-size: 12px;
+}
+
+
+/*头部上部分end*/
+
+
+/*横线*/
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*头部下部分布局*/
+
+.header-bottom {
+    width: 80%;
+    height: 118px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    /*position: relative;*/
+}
+
+.input-before {
+    background: url("../image/baidu.png");
+    /*display: inline-block;*/
+    width: 162px;
+    height: 72px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 90px;
+}
+
+.input-text {
+    margin-top: 30px;
+    border: 1px solid #999;
+    width: 550px;
+    height: 45px;
+    font-size: 14px;
+    float: left;
+    outline: none;
+}
+
+.button-text {
+    margin-top: 30px;
+    width: 95px;
+    height: 47px;
+    border: 1px solid #999;
+    border-left-color: transparent;
+    float: left;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+}
+
+.header-bottom-li {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-bottom-li li {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.header-bottom-li a {
+    color: #999;
+}
+
+.header-bottom-li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.header-bottom-li .li-tip {
+    position: relative;
+}
+
+.header-bottom-li .li-tip:before {
+    content: url("../image/sreach.png");
+    position: absolute;
+    top: -8px;
+    right: 55px;
+}
+
+
+/*头部布局完成*/
+
+
+/*main部分nav的上部分布局*/
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.main .main-nav {
+    margin: 40px auto 0 auto;
+    width: 80%;
+    border-top: 2px solid #118850;
+}
+
+.main .main-nav .main-nav-top .main-nav-top-list {
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #118850;
+    color: #fff;
+}
+
+.main .main-nav .main-nav-top .main-nav-top-list a,
+.main .main-nav .main-nav-top .main-nav-top-list a:hover {
+    color: #fff;
+}
+
+.main .main-nav .main-nav-top li {
+    display: inline-block;
+    width: 94px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.main .main-nav .main-nav-top li a {
+    color: #333;
+}
+
+.main .main-nav .main-nav-top li a:hover {
+    color: #118850;
+}
+
+.main .main-nav .main-nav-top span,
+.main-nav-bottom span {
+    color: #ccc;
+}
+
+
+/*main部分nav的上部分布局end*/
+
+
+/*main部分nav的下部分布局*/
+
+.main .main-nav .main-nav-bottom {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ade0c1;
+    box-sizing: border-box;
+}
+
+.main .main-nav .main-nav-bottom li {
+    display: inline-block;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.main .main-nav .main-nav-bottom .main-nav-bottom-list a,
+.main .main-nav .main-nav-bottom .main-nav-bottom-list a:hover {
+    color: #118850;
+    margin-left: 15px;
+    text-decoration: none;
+    cursor: text;
+}
+
+.main .main-nav .main-nav-bottom li a {
+    color: #333;
+}
+
+.main .main-nav .main-nav-bottom li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+
+/*main部分nav的下部分布局end*/
+
+
+/*footer布局*/
+
+.footer {
+    width: 100%;
+    height: 50px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.footer-yellow {
+    background-color: #ffff00;
+}
+
+.footer-red {
+    background-color: #ff0000;
+}
+
+.footer-blue {
+    background-color: #0000ff;
+}
+
+
+/*footer布局end*/

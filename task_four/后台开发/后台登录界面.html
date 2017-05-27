@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院后台登录界面</title>
+    <!--设备显示器，初始缩放，最大最小缩放，手动缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maxinum-scale=1.0,user-
+      scalable=0">
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta name="apple-moblie-web-app-capale" content="yes">
+    <!--控制状态栏显示样式-->
+    <meta name="apple-moblie-web-app-status-bar-style" content="black">
+    <!--phone数字禁止转化拨号-->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!--定义一个最外层容器-->
+    <div class="container">
+        <!--头部内容-->
+        <header>
+            <h2>极客学院后台登录界面</h2>
+        </header>
+        <!--form表单的容器-->
+        <div class="warp form-group">
+            <!--form表单-->
+            <form action="index.html" class="login" method="post">
+                <!--第一个div，设置邮箱输入框-->
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="电子邮箱" required>
+                </div>
+                <!--第二个div密码输入框-->
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                    <input type="password" class="form-control" placeholder="密码" required>
+                </div>
+                <!--定义一个button来提交以上内容-->
+                <button type="submit" class="btn">登录</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

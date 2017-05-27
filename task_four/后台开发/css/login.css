@@ -1,0 +1,79 @@
+/*背景颜色*/
+
+body {
+    background-color: #9dccc9;
+}
+
+
+/*设置header的居中效果和距顶部距离*/
+
+.container header {
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+/*设置header的字体大小喝颜色，距下个元素的距离*/
+
+.container header h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+/*设置内容容器的居中效果*/
+
+.container .warp {
+    text-align: center;
+}
+
+
+/*form表单的大小，居中，背景色*/
+
+.container .warp .login {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #666;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.4);
+}
+
+
+/*设置input的间距*/
+
+.container .warp .login .input-group {
+    margin-bottom: 20px;
+}
+
+
+/*设置button的大小，颜色，字体颜色*/
+
+.container .warp .login .btn {
+    width: 100%;
+    color: #fff;
+    height: 40px;
+    background-color: #0e0e0e;
+}
+
+
+/*移动端的适配*/
+
+@media(max-width:768px) {
+    html,
+    body {
+        height: 100%;
+    }
+    body {
+        min-width: 300px;
+        background-color: #ccc;
+    }
+    .container header {
+        margin-top: 100px;
+    }
+    .container .wrap .login {
+        width: 100%;
+    }
+}

@@ -1,0 +1,556 @@
+.container {
+    margin: 200px;
+}
+
+
+/*头部*/
+
+.head {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    background-color: #009900;
+}
+
+
+/*眼睛*/
+
+.eye_left {
+    position: absolute;
+    top: 250px;
+    left: 275px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: eyes 1s linear infinite;
+    -moz-animation: eyes 1s linear infinite;
+    -o-animation: eyes 1s linear infinite;
+    /*-ms-animation: eyes 1s linear infinite;*/
+    animation: eyes 1s linear infinite;
+}
+
+.eye_right {
+    position: absolute;
+    top: 250px;
+    left: 325px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: eyes 1s linear infinite;
+    -moz-animation: eyes 1s linear infinite;
+    -o-animation: eyes 1s linear infinite;
+    /*-ms-animation: eyes 1s linear infinite;*/
+    animation: eyes 1s linear infinite;
+}
+
+@-webkit-keyframes eyes {
+    0% {
+        -webkit-transform: scale(.5);
+        background-color: #cccccc;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        background-color: #000000;
+    }
+    100% {
+        -webkit-transform: scale(.5);
+        background-color: #cc1514;
+    }
+}
+
+@-ms-keyframes eyes {
+    0% {
+        -ms-transform: scale(.5);
+        background-color: #cccccc;
+    }
+    50% {
+        -ms-transform: scale(1);
+        background-color: #000000;
+    }
+    100% {
+        -ms-transform: scale(.5);
+        background-color: #cc1514;
+    }
+}
+
+@-o-keyframes eyes {
+    0% {
+        -o-transform: scale(.5);
+        background-color: #cccccc;
+    }
+    50% {
+        -o-transform: scale(1);
+        background-color: #000000;
+    }
+    100% {
+        -o-transform: scale(.5);
+        background-color: #cc1514;
+    }
+}
+
+@-moz-keyframes eyes {
+    0% {
+        -moz-transform: scale(.5);
+        background-color: #cccccc;
+    }
+    50% {
+        -moz-transform: scale(1);
+        background-color: #000000;
+    }
+    100% {
+        -moz-transform: scale(.5);
+        background-color: #cc1514;
+    }
+}
+
+@keyframes eyes {
+    0% {
+        transform: scale(.5);
+        background-color: #cccccc;
+    }
+    50% {
+        transform: scale(1);
+        background-color: #000000;
+    }
+    100% {
+        transform: scale(.5);
+        background-color: #cc1514;
+    }
+}
+
+
+/*电线*/
+
+.wire_left {
+    position: absolute;
+    top: 223px;
+    left: 260px;
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    -webkit-transform: rotate(-200deg);
+    -webkit-animation: wire 3s linear infinite 1s;
+    -moz-animation: wire 3s linear infinite 1s;
+    -o-animation: wire 3s linear infinite 1s;
+    /*-ms-animation:wire 3s linear infinite 1s;*/
+    animation: wire 3s linear infinite 1s;
+    z-index: -1;
+    transform-origin: right top;
+    -moz-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    -o-transform-origin: right top;
+    -ms-transform-origin: right top;
+}
+
+.wire_right {
+    position: absolute;
+    top: 220px;
+    left: 330px;
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    -webkit-transform: rotate(200deg);
+    transform-origin: right top;
+    -moz-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    -o-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -webkit-animation: wire 3s linear infinite;
+    -moz-animation: wire 3s linear infinite;
+    -o-animation: wire 3s linear infinite;
+    /*-ms-animation:wire 3s linear infinite;*/
+    animation: wire 3s linear infinite;
+    z-index: -1;
+    /*transform-origin:left top;*/
+}
+
+@-webkit-keyframes wire {
+    0% {
+        background-color: #ff0000;
+        height: 40px
+    }
+    25% {
+        background-color: aqua;
+        height: 50px
+    }
+    50% {
+        background-color: #009900;
+        height: 60px
+    }
+    75% {
+        background-color: #ffff00;
+        height: 50px
+    }
+    100% {
+        background-color: #ff0000;
+        height: 40px
+    }
+}
+
+@-ms-keyframes wire {
+    0% {
+        background-color: #ff0000;
+        height: 40px
+    }
+    25% {
+        background-color: aqua;
+        height: 50px
+    }
+    50% {
+        background-color: #009900;
+        height: 60px
+    }
+    75% {
+        background-color: #ffff00;
+        height: 50px
+    }
+    100% {
+        background-color: #ff0000;
+        height: 40px
+    }
+}
+
+@-o-keyframes wire {
+    0% {
+        background-color: #ff0000;
+        height: 40px
+    }
+    25% {
+        background-color: aqua;
+        height: 50px
+    }
+    50% {
+        background-color: #009900;
+        height: 60px
+    }
+    75% {
+        background-color: #ffff00;
+        height: 50px
+    }
+    100% {
+        background-color: #ff0000;
+        height: 40px
+    }
+}
+
+@-moz-keyframes wire {
+    0% {
+        background-color: #ff0000;
+        height: 40px
+    }
+    25% {
+        background-color: aqua;
+        height: 50px
+    }
+    50% {
+        background-color: #009900;
+        height: 60px
+    }
+    75% {
+        background-color: #ffff00;
+        height: 50px
+    }
+    100% {
+        background-color: #ff0000;
+        height: 40px
+    }
+}
+
+@keyframes wire {
+    0% {
+        background-color: #ff0000;
+        height: 40px
+    }
+    25% {
+        background-color: aqua;
+        height: 50px
+    }
+    50% {
+        background-color: #009900;
+        height: 60px
+    }
+    75% {
+        background-color: #ffff00;
+        height: 50px
+    }
+    100% {
+        background-color: #ff0000;
+        height: 40px
+    }
+}
+
+
+/*身体*/
+
+.body {
+    position: absolute;
+    top: 305px;
+    left: 208px;
+    width: 200px;
+    height: 180px;
+    background-color: #800080;
+    border-radius: 10%;
+}
+
+
+/*双手*/
+
+.hand_left {
+    position: absolute;
+    top: 325px;
+    left: 150px;
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: chocolate;
+    -webkit-animation: animations .5s infinite;
+    -moz-animation: animations .5s infinite;
+    -o-animation: animations .5s infinite;
+    /*-ms-animation:.5s infinite;*/
+    animation: animations .5s infinite;
+}
+
+@keyframes animations {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(45deg)
+    }
+    50% {
+        transform: rotate(90deg)
+    }
+    75% {
+        transform: rotate(135deg)
+    }
+    100% {
+        transform: rotate(180deg)
+    }
+}
+
+@-webkit-keyframes animations {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform: rotate(45deg)
+    }
+    50% {
+        -webkit-transform: rotate(90deg)
+    }
+    75% {
+        -webkit-transform: rotate(135deg)
+    }
+    100% {
+        -webkit-transform: rotate(180deg)
+    }
+}
+
+@-ms-keyframes animations {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    25% {
+        -ms-transform: rotate(45deg)
+    }
+    50% {
+        -ms-transform: rotate(90deg)
+    }
+    75% {
+        -ms-transform: rotate(135deg)
+    }
+    100% {
+        -ms-transform: rotate(180deg)
+    }
+}
+
+@-o-keyframes animations {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    25% {
+        -o-transform: rotate(45deg)
+    }
+    50% {
+        -o-transform: rotate(90deg)
+    }
+    75% {
+        -o-transform: rotate(135deg)
+    }
+    100% {
+        -o-transform: rotate(180deg)
+    }
+}
+
+@-moz-keyframes animations {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    25% {
+        -moz-transform: rotate(45deg)
+    }
+    50% {
+        -moz-transform: rotate(90deg)
+    }
+    75% {
+        -moz-transform: rotate(135deg)
+    }
+    100% {
+        -moz-transform: rotate(180deg)
+    }
+}
+
+.hand_right {
+    position: absolute;
+    top: 325px;
+    left: 427px;
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: chocolate;
+    -webkit-animation: hand_right 1s linear infinite;
+    -moz-animation: hand_right 1s linear infinite;
+    -o-animation: hand_right 1s linear infinite;
+    /*-ms-animation: hand_right 1s linear infinite;*/
+    animation: hand_right 1s linear infinite;
+}
+
+@-ms-keyframes hand_right {
+    0% {
+        -ms-transform: scale(1);
+        background-color: chocolate;
+    }
+    50% {
+        -ms-transform: scale(1.5);
+        background-color: #000000;
+    }
+    100% {
+        -ms-transform: scale(1);
+        background-color: #cc1514;
+    }
+}
+
+@-o-keyframes hand_right {
+    0% {
+        -o-transform: scale(1);
+        background-color: chocolate;
+    }
+    50% {
+        -o-transform: scale(1.5);
+        background-color: #000000;
+    }
+    100% {
+        -o-transform: scale(1);
+        background-color: #cc1514;
+    }
+}
+
+@-moz-keyframes hand_right {
+    0% {
+        -o-transform: scale(1);
+        background-color: chocolate;
+    }
+    50% {
+        -o-transform: scale(1.5);
+        background-color: #000000;
+    }
+    100% {
+        -o-transform: scale(1);
+        background-color: #cc1514;
+    }
+}
+
+@-webkit-keyframes hand_right {
+    0% {
+        -webkit-transform: scale(1);
+        background-color: chocolate;
+    }
+    50% {
+        -webkit-transform: scale(1.5);
+        background-color: #000000;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        background-color: #cc1514;
+    }
+}
+
+@keyframes hand_right {
+    0% {
+        transform: scale(1);
+        background-color: chocolate;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: #000000;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #cc1514;
+    }
+}
+
+
+/*双脚*/
+
+.foot_left {
+    position: absolute;
+    top: 489px;
+    left: 245px;
+    width: 40px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: chocolate;
+}
+
+.foot_right {
+    position: absolute;
+    top: 489px;
+    left: 330px;
+    width: 40px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: chocolate;
+}
+
+
+/*三角形*/
+
+.trigon {
+    position: absolute;
+    border: 20px solid transparent;
+    border-left-color: #ffff00;
+    top: 295px;
+    left: 289px;
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+/*领带*/
+
+.tie_left {
+    position: absolute;
+    left: 279px;
+    top: 335px;
+    height: 100px;
+    border: 15px solid transparent;
+    border-right-color: #3A3A34;
+}
+
+.tie_right {
+    position: absolute;
+    left: 309px;
+    top: 335px;
+    height: 100px;
+    border: 15px solid transparent;
+    border-left-color: #3A3A34;
+}

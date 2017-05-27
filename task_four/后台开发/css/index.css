@@ -1,0 +1,39 @@
+/*logo的大小设置*/
+
+.wrapper header img {
+    width: 103px;
+    height: 30px;
+}
+
+header.dropdown-menu {
+    min-width: 100px;
+}
+
+
+/*设置表格最小宽度*/
+
+.table th,
+.table td {
+    min-width: 44px;
+}
+
+@media(min-width:768px) {
+    /*侧边栏*/
+    .side-nav li {
+        width: 200px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .side-nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 200px;
+        border: 1px solid #e7e7e7;
+        padding-bottom: 40px;
+        background-color: #f8f8f8;
+    }
+    /*z主题部分*/
+    .wrapper .main {
+        margin-left: 200px;
+    }
+}

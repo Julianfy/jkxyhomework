@@ -1,0 +1,111 @@
+$color1:#0000ff;
+$color2:#ff0000;
+$color3:#fff;
+$color4:#6aa84f;
+$bg:background;
+$mg:margin;
+$bd:border;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cf:after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.wrap {
+    #{$mg}: 300px;
+    width: 800px;
+    height: 300px;
+    #{$bd}: 3px solid $color1;
+    #{$bd}-radius: 10px;
+    .bus_top {
+        span {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            width: 150px;
+            height: 80px;
+            #{$mg}: 10px 0 5px 0;
+            #{$bg}: #ffff00;
+            color: $color2;
+            float: left;
+            font-size: 46px;
+        }
+        .bus_top_div {
+            float: right;
+            width: 600px;
+            height: 60px;
+            #{$mg}-top: 20px;
+            span {
+                #{$mg}: 0 0 5px 0;
+                width: 600px;
+                height: 40px;
+                font-size: 30px;
+                #{$bg}: $color3;
+            }
+            .span_first {
+                color: $color4;
+            }
+            .span_last {
+                color: $color1;
+            }
+        }
+    }
+    p {
+        #{$mg}: 0 20px;
+        color: #434343;
+    }
+    .bus_cont {
+        width: 100%;
+        height: 140px;
+        #{$bg}: $color4;
+        span {
+            display: inline-block;
+            width: 20px;
+            height: 100%;
+            font-size: 16px;
+            #{$mg}-left: 21px;
+            color: $color3;
+            text-align: word-spacing;
+        }
+        .list {
+            color: $color2;
+        }
+    }
+    .bus_p {
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        #{$mg}: 0;
+        color: $color1;
+        text-align: center;
+    }
+    .bus_span {
+        display: inline-block;
+        width: 60%;
+        height: 10px;
+        font-size: 20px;
+        #{$mg}-left: 20%;
+        #{$mg}-top: 5px;
+        border-top: 5px solid $color2;
+    }
+    i {
+        position: absolute;
+        content: "";
+        #{$bd}-width: 8px 30px;
+        #{$bd}-style: solid;
+        #{$bd}-left-color: $color2;
+        #{$bd}-top-color: $color3;
+        #{$bd}-bottom-color: $color3;
+        #{$bd}-right-color: $color3;
+        #{$bg}: #333;
+    }
+}
